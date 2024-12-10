@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="transaction.html">Transactions</a></li>
+            <li><a href="transaction-history.html">Transaction History</a></li>
+        </ul>
+    </nav>
+
+    <button id="createAccountButton">Create Account</button>
+
+    <!-- Create Account Modal -->
+    <div id="createAccountModal" style="display: none;">
+        <div class="modal-content">
+            <button id="closeModal">X</button>
+            <form id="createAccountForm">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" required>
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" required>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

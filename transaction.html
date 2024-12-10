@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="transaction.html">Transactions</a></li>
+            <li><a href="transaction-history.html">Transaction History</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to the Transaction Page</h1>
+
+    <div class="tabs">
+        <button class="tab-button active" onclick="showTab('withdraw')">Withdraw</button>
+        <button class="tab-button" onclick="showTab('deposit')">Deposit</button>
+    </div>
+
+    <div id="withdraw" style="display: block;">
+        <form id="withdrawForm">
+            <label for="withdrawAmount">Amount:</label>
+            <input type="number" id="withdrawAmount" required>
+            <button type="submit">Withdraw</button>
+        </form>
+    </div>
+
+    <div id="deposit" style="display: none;">
+        <form id="depositForm">
+            <label for="depositAmount">Amount:</label>
+            <input type="number" id="depositAmount" required>
+            <button type="submit">Deposit</button>
+        </form>
+    </div>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
